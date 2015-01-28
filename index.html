@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML</title>
+    <script src="js.js"></script>
+    <style>
+        .container{
+            margin: 0 auto;
+        }
+        #result {
+            background: url(ciudad.jpg);
+            background-size: 600px 450px;
+        }
+
+        .controls {
+            background: #808080;
+            height: 40px;
+            padding: 0, 30px;
+            line-height: 40px;
+        }
+        .videos{
+            margin: 0 auto;
+            padding: 0;
+            width: 1208px;
+        }
+        #canvas{
+            display: none;
+        }
+        #video,#result{
+            width: 600px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="controls">
+        <button id="photo" onclick="inicia()">Inicia chroma</button>
+        <input id="umbral" type="number" value="0"/>
+    </div>
+    <div class="videos">
+    <video id="video" width="400" height="300" autoplay="autoplay"></video>
+    <canvas id="canvas" width="400" height="300"></canvas>
+    <canvas id="result" width="400" height="300"></canvas>
+    </div>
+</div>
+</body>
+</html>
